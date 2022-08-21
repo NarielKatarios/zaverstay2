@@ -3,38 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Scandi</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700;display=swap">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="/fonts/NotoSans-Regular.woff2" as="font">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body class="page-body">
-    <header class="page-header">
-      <nav class="page-navigation container">
-        <a class="page-header-logo">
-          <img src="img/scandi-logo.png" width="25" height="25" alt="Логотип Scandi">
-          Scandi
-        </a>
-        <ul class="site-navigation">
-          <li class=""><a href="index.html#about">О компании</a></li>
-          <li><a href="index.html#portfolio">Портфолио</a></li>
-          <li><a href="index.html#team">Команда</a></li>
-          <li><a href="index.html#work">Как мы работаем</a></li>
-          <li><a href="index.html#reviews">Отзывы клиентов</a></li>
-          <li><a href="index.html#request">Оставить заявку</a></li>
-        </ul>
-        <tel>+7 (981) 857-46-24</tel>
-      </nav>
-    </header>
+    <div class="wrapper">
+      <header class="page-header">
+        <nav class="page-navigation container">
+          <a class="page-header-logo">
+            <img src="img/scandi-logo.png" width="25" height="25" alt="Логотип Scandi">
+            Scandi
+          </a>
+          <ul class="site-navigation">
+            <li class=""><a href="index.html#about">О компании</a></li>
+            <li><a href="index.html#portfolio">Портфолио</a></li>
+            <li><a href="index.html#team">Команда</a></li>
+            <li><a href="index.html#work">Как мы работаем</a></li>
+            <li><a href="index.html#reviews">Отзывы клиентов</a></li>
+            <li><a href="index.html#request">Оставить заявку</a></li>
+          </ul>
+          <tel>+7 (981) 857-46-24</tel>
+        </nav>
+      </header>
 
-    <main class="page-main">
       <h1 class="visually-hidden">Scandi</h1>
       <section class="">
         <div class="container">
           <h2 class="visually-hidden">Помощь для уюта</h2>
-          <div class="">
-              <p class="slogan">Поможем сделать 
-                вашу квартиру уютнее.</p>
+          <div class="promo">
+              <p class="slogan">Поможем сделать вашу квартиру уютнее.</p>
               <p class="slogan-details">Подбираем текстиль, мебель и аксессуары
                 под ваш интерьер, находим магазины
                 и помогаем организовать доставку.</p>
@@ -42,11 +40,14 @@
           </div>
         </div>
       </section>
+    </div>
+    <main class="page-main">
 
       <section class="about" name="about">
         <h2 class="about__title">О нас</h2>
         <div class="container">
-          <img class="about__image" src="img/" width="445" height="572" alt="сервировка стола"> 
+          
+          <img class="about__image" src="img/about130.jpg" width="500" height="450" alt="сервировка стола"> 
           <div class="about__slogan">
             <p>Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии.</p>
             <p>Наш коллектив сделает все, чтобы после сотрудничества с нами,  Вам было приятно сказать:
@@ -55,62 +56,63 @@
         </div>
       </section>
 
-      <section class="" name="">
+      <section class="achievments" name="achievments">
         <h2 class="visually-hidden">Преимущества</h2>
         <div class="container">
           <ul>
-          <li><span>5</span>лет опыта</li>
-          <li><span>100</span>проектов</li>
-          <li><span>10</span>наград</li>
+          <li><span>5</span><br>лет опыта</li>
+          <li><span>100</span><br>проектов</li>
+          <li><span>10</span><br>наград</li>
           </ul>
         </div>
       </section>
 
       <section class="portfolio" name="portfolio">
-        <h2 class="">Наши работы</h2>
+        <h2 class="portfolio__title container">Наши работы</h2>
         <div class="container">
-          <ul>
+          <ul class="our_works">
           <li>
-            <img src="img/" width="488" height="451" alt="">
+            <!-- <img src="img/" width="488" height="451" alt=""> -->
             <h3>Квартира-студия 30 кв.м.</h3>
             <p>В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
               на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
           </li>
           <li>
-            <img src="img/" width="692" height="451" alt="">
-            <h3></h3>
-            <p></p>
-          </div>
-          <li>
-            <img src="img/" width="692" height="451" alt="">
+            <img src="/img/rectangle134.jpg" width="692" height="451" alt="">
             <h3></h3>
             <p></p>
           </li>
           <li>
-            <img src="img/" width="488" height="451" alt="">
+            <img src="img/rectangle132.jpg" width="692" height="451" alt="">
             <h3></h3>
             <p></p>
           </li>
-        </ul>
-        <a href="#">Смотреть ещё</a>
+          <li>
+            <img src="img/image56.jpg" width="488" height="451" alt="">
+            <h3></h3>
+            <p></p>
+          </li>
+          </ul>
+          <a class="portfolio__more" href="#">Смотреть ещё</a>
+        </div>
       </section>
 
       <section class="team" name="team">
-        <h2 class="">Команда</h2>
+        <h2 class="team__title">Команда</h2>
         <div class="container">
           <ul>
           <li>
-            <img src="img/" width="375" height="249" alt="">
+            <img src="img/image61.jpg" width="320" height="250" alt="">
             <p>Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается
               и помогает сделать вашу квартиру красивой и уютной.</p>
           </li>
           <li>
-            <img src="img/" width="320" height="253" alt="">
+            <img src="img/image59.jpg" width="320" height="250" alt="">
             <p>С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все документы
               и ответит на все вопросы.</p>
           </li>
           <li>
-            <img src="img/" width="320" height="253" alt="">
+            <img src="img/image58.jpg" width="320" height="250" alt="">
             <p>Катя тоже занимается дизайном.
               Она всегда находит общий язык
               с клиентами и точно знает,
@@ -120,64 +122,67 @@
       </section>
 
       <section class="work" name="work">
-        <h2 class="">Как мы работаем</h2>
+        <h2 class="work__title">Как мы работаем</h2>
         <div class="container">
-          <ol>
+          <ol class="work__list">
           <li>Знакомимся, выезжаем
             на объект, утверждаем концепцию, подписываем договор.</li>
           <li>Подбираем мебель, текстиль, аксессуары. Делаем 3D-визуализацию.</li>
           <li>Находим нужные магазины, помогаем с доставкой
             и оплатой товаров.</li>
-          <li>ЗВоплощаем проект в жизнь:
+          <li>Воплощаем проект в жизнь:
             расставляем мебель и цветы, вешаем шторы, находим места для мелочей</li>
         </ol>
       </section>
 
       <section class="reviews" name="reviews">
-        <h2 class="">Отзывы</h2>
+        <h2 class="reviews__title">Отзывы</h2>
         <div class="container">
           <ul>
-          <li><blockquote>«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.
-
+          <li class="reviews__item">
+            <div class="review__item"><blockquote><p>«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.</p>
+            <p>
             Работа шла быстро, было очень приятно общаться и взаимодествовать
-            с сотрудниками. Не ожидала, что это будет так легко!
-            
-            Буду советовать и своим друзьям к вам обращаться!»</blockquote>
+            с сотрудниками. Не ожидала, что это будет так легко!</p>
+            <p>
+            Буду советовать и своим друзьям к вам обращаться!»</p></blockquote>
             <cite>АННА БЕЛОВСКАЯ</cite>
-            <img src="img/" width="407" height="272" alt="">
-            <img src="img/" width="407" height="272" alt="">
+            </div>
+            <div class="review__image">
+            <img src="img/rectangle141.jpg" width="407" height="272" alt="">
+            <img src="img/image62.jpg" width="407" height="272" alt="">
+            </div>
           </li>
         </ul>
-        <button type="button" aria-label="previous"></button>
-        <button type="button" aria-label="next"></button>
-      </section>
-
-
-
-
-      <section class="request" name="request">
-        <div class="container">
-          <form>
-            <h2 class="">Оставить заявку</h2>
-            <p>Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
-            <input type="name">
-            <input type="tel">
-            <input type="submit">
-          </form>
-        </section>     
-      
-      <section class="contacts">
-        <iframe src="https://www.google.com/maps/" width="590" height="624" allowfullscreen="" title="Офис компании по адресу ">
-        </iframe>
-
-          </div>
+        <button class="button--previous" type="button" aria-label="previous"></button>
+        <button class="button--next" type="button" aria-label="next"></button>
         </div>
       </section>
+
+      <!-- <div class="request__container"> -->
+        <section class="request" name="request">
+        <div class="container">
+          <form action="getform.php" method="get">
+            <h2 class="request__title">Оставить заявку</h2>
+            <p>Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
+            <input type="name" name="name" value="Ваше имя"><br>
+            <input type="tel" name="tel" value="Введите телефон"><br>
+            <input class="button" type="submit"  value="Оставить заявку">
+          </form>
+          </div>
+        </section>     
+      
+        <section class="contacts">
+            <!-- <iframe src="https://www.google.com/maps/" width="590" height="624" allowfullscreen="" title="Офис компании по адресу ">
+            </iframe> -->
+            <div class="map" style="position:absolute;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/profile?ll=30.323117%2C59.938635&utm_medium=mapframe&utm_source=maps&z=16.24" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCURnOa~HB" width="590" height="620" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        </section>
+      <!-- </div> -->
     </main>
 
     <footer class="page-footer">
       <div class="main-footer container">
-        <tel>+7 (981) 857-46-24</tel>
+        <p><tel>+7 (981) 857-46-24</tel></p>
         <p>г. Санкт-петербург, ул. Большая Конюшенная, 19</p>
         <p class="copyright">ИП Королёва А.А.</p>
       </div>
