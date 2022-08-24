@@ -95,6 +95,11 @@ ul {
   margin-right: 25px;
 }
 
+.site-navigation li:hover,
+.site-navigation li:focus {
+  border-bottom: 1px solid black;
+}
+
 /* .site-navigation li:first-child {
   margin-right: 30px;
 } */
@@ -237,7 +242,8 @@ ul {
   z-index: 1;
 }
 
-.portfolio__item:hover .portfolio__details{
+.portfolio__item:hover .portfolio__details,
+.portfolio__item:focus .portfolio__details {
   display: block;
 }
 
@@ -255,7 +261,7 @@ padding: 20px 65px 10px;
 
 }
 
-.portfolio__more {
+.portfolio__secondary {
   text-align: center;
   font-weight: 500;
   font-size: 30px;
@@ -265,7 +271,7 @@ padding: 20px 65px 10px;
   /* background: red; */
 }
 
-.portfolio__more:before {
+.portfolio__secondary:before {
   content: "";
   position: absolute;
   right: 400px;
@@ -274,6 +280,10 @@ padding: 20px 65px 10px;
   width: 62px;
   height: 17px;
   display: flex;
+}
+
+.portfolio__secondary:hover {
+  border-bottom: 1px solid black;
 }
 
 /*team*/
@@ -383,8 +393,12 @@ line-height: 30px;
 
 .reviews {
   margin-top: 70px;
-  position: relative;
+  /* position: relative; */
   margin-bottom: 60px;
+}
+
+.reviews__list {
+  position: relative;
 }
 
 .reviews__title {
@@ -458,8 +472,8 @@ transform: rotate(180deg);
 
 .reviews .button--next, 
 .reviews .button--previous {
-  top: 325px;
-left: 180px;
+  top: 245px;
+left: 95px;
 position: absolute;
 background-image: url("../img/arrow2.svg");
 background-repeat: no-repeat;
@@ -471,8 +485,8 @@ border-radius: 50%;
 }
 
 .reviews .button--next {
-  top: 325px;
-  left: 1150px;
+  top: 245px;
+  left: 1060px;
   transform: rotate(180deg);
   background-position: 19px 26px;
 }
